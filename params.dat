@@ -1,0 +1,27 @@
+#GRID OPTIONS#
+initial_width=100        #Wells initial width (integer), default=100
+spatial_pts=200          #In how many points is the well spatially divided (integer), default=200
+external_time=5000        #How many time steps does it take to double the width (integer), default=500
+initial_time=0           #First timestep calculated (integer), default=0
+time_pts=5000             #How many time steps will be calculated (integer), default=500
+grid_time_dnst=0.25       #How much time passes between two timesteps(non-integer), default=2.5
+initial_degree=5         #Degree of the wavefunction at t=0 (integer), default=4
+
+#SAVED DATA OPTIONS#
+data_jump=3              #every this manieth calculated time point will be saved (integer), default=1
+save_probabilities=1     #1 for yes, 0 for no, default=0
+save_real_imag=1         #1 for yes, 0 for no, default=0
+save_norm_arg=1          #1 for yes, 0 for no, default=0
+calc_analytic=1          #1 for yes, 0 for no, default=0
+calc_adiabat=1           #1 for yes, 0 for no, default=0
+calc_forwardtime=0       #1st order forward time difference method. 1 for yes, 0 for no, default=0
+calc_backwardtime=0      #1st order backward time difference method. 1 for yes, 0 for no, default=0
+calc_centraltime=1       #2nd order central time difference method. 1 for yes, 0 for no, default=0
+ecalc_analytic_numeric=0 #calculate analytic - numeric -point-to-point error matrix. 1 for yes, 0 for no, default=0
+ecalc_analytic_adiabat=0 #calculate analytic - adiabatic -point-to-point error matrix. 1 for yes, 0 for no, default=0
+ecalc_adiabat_numeric=0  #calculate adiabatic - numeric -point-to-point error matrix. 1 for yes, 0 for no, default=0
+
+#NUMERICAL INTEGRATION OPTIONS#
+integral_grid_pts=360    #How many grid points are used in numerical integration (integer), default=100
+integral_degree=1        #Used integral quadrature's degree (1, 2 or 3), default=3
+base_funcs=90            #How many analytic base functions are used in constructing analytic solution (integer), default=20
